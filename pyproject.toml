@@ -1,0 +1,21 @@
+[build-system]
+requires = [
+    "setuptools",
+    "setuptools_scm>=8.1",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gilded_rose"
+dynamic = ["version"]
+description = "A description of the package"
+license = {text = "MIT License"}
+classifiers = [
+  "Private :: Do Not Upload"
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools_scm]
+version_file = "src/gilded_rose/_version.py"
